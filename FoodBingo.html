@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mix-and-Match Meal Prep Framework (ZOE‑aligned, Thermomix‑ready)</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #0f172a;
+    --muted: #475569;
+    --border: #e2e8f0;
+    --accent: #2563eb;
+    --accent-2: #0ea5e9;
+    --chip: #f1f5f9;
+    --chip-fg: #0f172a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    margin: 0;
+    color: var(--fg);
+    background: var(--bg);
+    line-height: 1.55;
+  }
+  .wrap {
+    max-width: 1100px;
+    margin: 2rem auto 4rem;
+    padding: 0 1rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    margin: 0 0 .25rem 0;
+    line-height: 1.2;
+  }
+  header p {
+    color: var(--muted);
+    margin: 0.25rem 0 1rem;
+  }
+  .card {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1rem 1rem 0.5rem;
+    margin: 1.25rem 0 2rem;
+    box-shadow: 0 1px 0 rgba(0,0,0,.02), 0 8px 24px rgba(15,23,42,.04);
+  }
+  .card h2 {
+    font-size: 1.35rem;
+    margin: .25rem .5rem .75rem;
+  }
+  .table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: .5rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: .95rem;
+  }
+  thead th {
+    position: sticky;
+    top: 0;
+    background: #f8fafc;
+    z-index: 1;
+    text-align: left;
+  }
+  th, td {
+    border-bottom: 1px solid var(--border);
+    padding: .55rem .6rem;
+    vertical-align: top;
+  }
+  tbody tr:hover td {
+    background: #fbfdff;
+  }
+  .alt {
+    padding: .6rem .8rem 1rem;
+    color: var(--muted);
+    font-size: .93rem;
+  }
+  .alt a { color: var(--accent); text-decoration: none; }
+  .alt a:hover { text-decoration: underline; }
+  .chip {
+    display: inline-block;
+    background: var(--chip);
+    color: var(--chip-fg);
+    border: 1px solid var(--border);
+    padding: .1rem .45rem;
+    border-radius: 999px;
+    font-size: .8em;
+    margin-right: .25rem;
+    white-space: nowrap;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .small { color: var(--muted); font-size: .9em; }
+  .kbd {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    padding: 0 .35rem;
+    border-radius: 6px;
+    font-size: .85em;
+  }
+  footer {
+    margin-top: 2rem;
+    color: var(--muted);
+    font-size: .92rem;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Mix-and-Match Meal Prep Framework <span class="small">(ZOE‑aligned, Thermomix‑ready)</span></h1>
+      <p class="small">Focus: plant diversity, fibre, minimally processed ingredients, and convenience. Batch‑first items that freeze and reheat cleanly. Ratings shown where available; “Buy ready” used where quality is equivalent and faster.</p>
+    </header>
+
+    <!-- BASE -->
+    <section class="card">
+      <h2>Base (Grains &amp; Starches)</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Number of ingredients</th>
+              <th>Batch size</th>
+              <th>Prep method</th>
+              <th>Recipe link(s)</th>
+              <th>Storage</th>
+              <th>Longevity</th>
+              <th>Use cases</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Brown Rice</strong> (cooked)</td>
+              <td>1</td>
+              <td>8 × ~150 g portions (cooked)</td>
+              <td>Thermomix</td>
+              <td><a href="https://cookidoo.com.au/recipes/recipe/en-au/r910790">Brown Rice – Cookidoo</a> 4.7 ★ (17)</td>
+              <td>FZ (flat bags) | FR</td>
+              <td>FZ: 3–4 months; FR: 5 days</td>
+              <td>Base for curries, stir‑fries, bowls</td>
+              <td>GF, DF, VG; freeze flat for quick defrost; fluff after reheating.</td>
+            </tr>
+            <tr>
+              <td><strong>Quinoa</strong> (steamed)</td>
+              <td>1</td>
+              <td>7 × ~150 g portions (cooked)</td>
+              <td>Thermomix</td>
+              <td><a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r780441">Basic Quinoa – Cookidoo UK</a> 4.6 ★ (63)</td>
+              <td>FZ (bags) | FR</td>
+              <td>FZ: 2–3 months; FR: 4–5 days</td>
+              <td>Salads, bowls, rice substitute</td>
+              <td>GF, DF, VG; complete protein; rinse before cooking.</td>
+            </tr>
+            <tr>
+              <td><strong>Cauliflower “Rice”</strong></td>
+              <td>1</td>
+              <td>~450 g (4 × ~115 g portions)</td>
+              <td>Thermomix</td>
+              <td><a href="https://cookidoo.thermomix.com/recipes/recipe/en-US/r651041">Cauliflower Rice – Cookidoo</a> 4.6 ★ (158)</td>
+              <td>FZ (portions) | FR</td>
+              <td>FZ: 2 months; FR: 3 days</td>
+              <td>Low‑carb base for curries, burrito bowls</td>
+              <td>GF, DF, VG; steam from frozen; avoid over‑blending.</td>
+            </tr>
+            <tr>
+              <td><strong>Sweet Potato Mash</strong></td>
+              <td>5</td>
+              <td>6 × ~180 g portions (mashed)</td>
+              <td>Thermomix</td>
+              <td><a href="https://cookidoo.thermomix.com/recipes/recipe/en-US/r504739">Silky Sweet Potato Mash – Cookidoo</a> 4.9 ★ (735)</td>
+              <td>FZ (cubes) | FR</td>
+              <td>FZ: 2–3 months; FR: 4–5 days</td>
+              <td>Dollop under stews, with grilled veg or fish</td>
+              <td>V, GF; for vegan, use plant butter &amp; milk.</td>
+            </tr>
+            <tr>
+              <td><strong>Wholegrain Bread</strong> (loaf)</td>
+              <td>–</td>
+              <td>1 loaf (~20 slices)</td>
+              <td>Buy ready</td>
+              <td>Quality bakery sourdough or seeded loaf</td>
+              <td>FZ (slices) | PN</td>
+              <td>FZ: 3 months; PN: 4–5 days (airtight)</td>
+              <td>Toast sides, open sandwiches, breadcrumbs</td>
+              <td>V, HF; choose 100% wholegrain, seeded where possible.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="alt"><strong>Alternatives:</strong> <a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r564753">Bulgur Wheat</a>, <a href="https://cookidoo.international/recipes/recipe/en/r810475">Tex‑Mex Red Rice</a>, <a href="https://cookidoo.international/recipes/recipe/en/r811291">Mushroom Herb Parboiled Rice</a>, <a href="https://cookidoo.international/recipes/recipe/en/r910790">Steamed White Rice</a></div>
+    </section>
+
+    <!-- PROTEIN -->
+    <section class="card">
+      <h2>Protein</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th><th>Number of ingredients</th><th>Batch size</th><th>Prep method</th><th>Recipe link(s)</th><th>Storage</th><th>Longevity</th><th>Use cases</th><th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Shredded Chicken</strong> (plain)</td>
+              <td>5</td>
+              <td>~500 g (4 portions)</td>
+              <td>Thermomix</td>
+              <td><a href="https://cookidoo.com.au/recipes/recipe/en-AU/r812303">Shredded Chicken 2‑for‑1 – Cookidoo</a> 4.7 ★ (35)</td>
+              <td>FZ (bag) | FR</td>
+              <td>FZ: 3 months; FR: 4 days</td>
+              <td>Tacos, salads, wraps, fried rice</td>
+              <td>GF, DF; steam &amp; shred in TM; season post‑freeze.</td>
+            </tr>
+            <tr>
+              <td><strong>Browned Beef Mince</strong> (basic)</td>
+              <td>2</td>
+              <td>~500 g (≈4 servings)</td>
+              <td>Thermomix</td>
+              <td><a href="https://cookidoo.com.au/recipes/recipe/en-AU/r910621">Browned Beef Mince – Cookidoo</a> 5.0 ★ (21)</td>
+              <td>FZ (flat pack) | FR</td>
+              <td>FZ: 2–3 months; FR: 3 days</td>
+              <td>Pasta sauces, chilli, shepherd’s pie, lettuce wraps</td>
+              <td>GF, DF; high‑protein base; portion flat for fast thaw.</td>
+            </tr>
+            <tr>
+              <td><strong>Chilli con <em>Tempeh</em></strong></td>
+              <td>10</td>
+              <td>~1.2 kg (4–5 portions)</td>
+              <td>Thermomix</td>
+              <td><a href="https://cookidoo.com.au/recipes/recipe/en-AU/r102255">Chilli con Tempeh – Cookidoo</a> 4.7 ★ (65)</td>
+              <td>FZ (tub) | FR</td>
+              <td>FZ: 2–3 months; FR: 4–5 days</td>
+              <td>Over rice or potato; burritos or tacos</td>
+              <td>VG, HF; tempeh + beans = fibre &amp; protein.</td>
+            </tr>
+            <tr>
+              <td><strong>Red Lentil &amp; Coconut Dhal</strong></td>
+              <td>8</td>
+              <td>~350–400 g (2–3 portions)</td>
+              <td>Thermomix</td>
+              <td><a href="https://cookidoo.international/recipes/recipe/en/r773058">Delicious Coconut Dhal – Cookidoo</a> 4.7 ★ (102)</td>
+              <td>FZ (portions) | FR</td>
+              <td>FZ: 2 months; FR: 5 days</td>
+              <td>Curry over base or a protein‑rich soup</td>
+              <td>VG, GF, HF; gentle spices; add spinach at end.</td>
+            </tr>
+            <tr>
+              <td><strong>Chickpeas</strong> (cooked)</td>
+              <td>1</td>
+              <td>~600 g drained (≈2 cans)</td>
+              <td>Thermomix / Buy ready</td>
+              <td><a href="https://cookidoo.thermomix.com/recipes/recipe/en-US/r547263">Slow‑Cooked Chickpeas – Cookidoo</a> 4.7 ★ (36) / no‑salt canned (rinse)</td>
+              <td>FZ (flat) | FR</td>
+              <td>FZ: 4–6 months; FR: 3–4 days</td>
+              <td>Curries, stews, hummus, roasted snacks, salads</td>
+              <td>VG, GF, DF; batch in brine then portion.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="alt"><strong>Alternatives:</strong> <a href="https://cookidoo.com.au/recipes/recipe/en-AU/r749987">Crispy Korean Tofu</a>, <a href="https://cookidoo.thermomix.com/recipes/recipe/en-US/r543591">Sautéed Chicken Cubes</a>, <a href="https://cookidoo.thermomix.com/recipes/recipe/en-US/r97065">Butterbean &amp; Feta Burgers</a>, <a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r123584">Vegetarian Chilli</a>, <a href="https://cookidoo.thermomix.com/recipes/recipe/en-US/r574544">Indian‑spiced Butternut &amp; Chickpea Curry</a></div>
+    </section>
+
+    <!-- VEG LOAD -->
+    <section class="card">
+      <h2>Veg Load (Vegetable Components)</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th><th>Number of ingredients</th><th>Batch size</th><th>Prep method</th><th>Recipe link(s)</th><th>Storage</th><th>Longevity</th><th>Use cases</th><th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Ratatouille</strong> (veg stew)</td>
+              <td>7</td>
+              <td>~1.0–1.2 kg (6–8 portions)</td>
+              <td>Traditional (oven)</td>
+              <td><a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r151848">Ratatouille – Cookidoo UK</a> 4.5 ★ (72)</td>
+              <td>FZ (tub) | FR</td>
+              <td>FZ: 3 months; FR: 4–5 days</td>
+              <td>Chunky veg side; over pasta or grains</td>
+              <td>VG, GF; roast for depth; finish with herbs.</td>
+            </tr>
+            <tr>
+              <td><strong>Spiced Red Cabbage</strong></td>
+              <td>5</td>
+              <td>~800 g (6 portions)</td>
+              <td>Thermomix</td>
+              <td><a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r488648">Spiced Red Cabbage – Cookidoo</a> 4.4 ★ (140)</td>
+              <td>FZ (bag) | FR</td>
+              <td>FZ: 2–3 months; FR: 1 week</td>
+              <td>Roast dinners, sausage wraps, bowls</td>
+              <td>VG, GF; sweet–sour; high fibre.</td>
+            </tr>
+            <tr>
+              <td><strong>Sautéed Mushrooms</strong></td>
+              <td>3</td>
+              <td>~400 g (4 portions)</td>
+              <td>Thermomix</td>
+              <td><a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r493970">Sautéed mushrooms (400 g) – Cookidoo</a> 4.7 ★ (169)</td>
+              <td>FR (airtight)</td>
+              <td>FR: 3–4 days</td>
+              <td>Toast topper, steaks, omelettes, pasta</td>
+              <td>V, GF; mix varieties; add thyme/garlic.</td>
+            </tr>
+            <tr>
+              <td><strong>Peppers &amp; Onions (Fajita mix)</strong></td>
+              <td>4</td>
+              <td>~360 g (4 portions)</td>
+              <td>Thermomix</td>
+              <td><a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r548163">Sautéed Red Peppers with Onions – Cookidoo</a> 4.6 ★ (20)</td>
+              <td>FR (airtight)</td>
+              <td>FR: 4–5 days</td>
+              <td>Stir‑fries, fajitas, omelettes, sandwiches</td>
+              <td>VG, GF; add cumin/chilli to taste.</td>
+            </tr>
+            <tr>
+              <td><strong>Roasted Veg Medley</strong></td>
+              <td>5</td>
+              <td>~800 g (6 portions)</td>
+              <td>Traditional / Buy ready</td>
+              <td>Seasonal mix: peppers, courgette, red onion, squash</td>
+              <td>FZ (bags) | FR</td>
+              <td>FZ: 3 months; FR: 3–4 days</td>
+              <td>Reheat for any meal; salads, pasta, wraps</td>
+              <td>VG, GF; roast @200 °C; or use quality frozen.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="alt"><strong>Alternatives:</strong> <a href="https://cookidoo.ca/recipes/recipe/en-CA/r136204">Baingan Bharta</a>, <a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r64734">Lentil Moussaka</a>, <a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r145170">Hand Ripped Cabbage</a>, <a href="https://cookidoo.international/recipes/recipe/en/r674467">Palak Paneer</a>, <a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r123584">Vegetarian Chilli</a></div>
+    </section>
+
+    <!-- FLAVOUR BOMB -->
+    <section class="card">
+      <h2>Flavour Bomb (Sauces, Pastes &amp; Condiments)</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th><th>Number of ingredients</th><th>Batch size</th><th>Prep method</th><th>Recipe link(s)</th><th>Storage</th><th>Longevity</th><th>Use cases</th><th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Basil Pesto</strong> (classic)</td>
+              <td>5</td>
+              <td>~250–350 g (1 jar)</td>
+              <td>Thermomix</td>
+              <td><a href="https://cookidoo.international/recipes/recipe/en/r68000">Basil Pesto – Cookidoo</a> 4.8 ★ (237)</td>
+              <td>FR (jar) | FZ</td>
+              <td>FR: 1 week; FZ: 3 months (ice cubes)</td>
+              <td>Pasta, bowls, grilled meats/veg, sandwich spread</td>
+              <td>V, GF; walnut swap for pine nuts works well.</td>
+            </tr>
+            <tr>
+              <td><strong>Thai Red Curry Paste</strong></td>
+              <td>10</td>
+              <td>~300–400 g (jar)</td>
+              <td>Thermomix</td>
+              <td><a href="https://cookidoo.thermomix.com/recipes/recipe/en-US/r68365">Thai Red Curry Paste – Cookidoo</a> 4.6 ★ (131)</td>
+              <td>FZ (cube tray)</td>
+              <td>FZ: 6+ months</td>
+              <td>Thai curries (1–2 Tbsp/400 ml coconut milk), marinades</td>
+              <td>VG, GF; spicy; freeze as 1–2 Tbsp cubes.</td>
+            </tr>
+            <tr>
+              <td><strong>Tikka Paste</strong></td>
+              <td>9</td>
+              <td>~800 g (jar)</td>
+              <td>Thermomix</td>
+              <td><a href="https://cookidoo.thermomix.com/recipes/recipe/en-US/r112922">Tikka Paste – Cookidoo</a> 4.9 ★ (205)</td>
+              <td>FR (jar) | FZ</td>
+              <td>FR: 2–3 weeks; FZ: 6 months</td>
+              <td>Marinades (2–3 Tbsp + yogurt for 500 g protein), curries base</td>
+              <td>VG, GF; toast spices; high‑yield.</td>
+            </tr>
+            <tr>
+              <td><strong>Muhammara</strong> (pepper–walnut)</td>
+              <td>8</td>
+              <td>~350–450 g</td>
+              <td>Thermomix</td>
+              <td><a href="https://cookidoo.thermomix.com/recipes/recipe/en-US/r781622">Roasted Red Pepper &amp; Walnut Dip – Cookidoo</a> 4.9 ★ (31)</td>
+              <td>FR (jar) | FZ</td>
+              <td>FR: 5 days; FZ: 2 months</td>
+              <td>Mezze, wraps, sauce for roast veg</td>
+              <td>VG; contains nuts; HF, healthy fats.</td>
+            </tr>
+            <tr>
+              <td><strong>Salsa Verde</strong> (herb sauce)</td>
+              <td>6</td>
+              <td>~200 g (bowl)</td>
+              <td>No‑cook</td>
+              <td><a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r136393">Salsa Verde <em>Cruda</em> – Cookidoo</a> 4.9 ★ (137)</td>
+              <td>FR (jar)</td>
+              <td>FR: 1 week (cover with oil)</td>
+              <td>Fish, roasted veg, salads; zesty dip</td>
+              <td>VG, GF; raw herbs + citrus; bright acidity.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="alt"><strong>Alternatives:</strong> <a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r136393">Salsa Verde Cruda</a>, <a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r117462">Romesco</a>, <a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r70861">Capsicum and Sun‑dried Tomato Dip</a>, <a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r70862">Tapenade</a>, <a href="https://cookidoo.thermomix.com/recipes/recipe/en-US/r781622">Muhammara</a>, <a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r55075">Pesto</a>, <a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r123523">White Bean Purée</a>, <a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r112922">Tikka Paste</a>, <a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r68365">Thai Red Curry paste</a>, <a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r493387">Thai Green Curry Paste</a>, <a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r485260">Red Pesto</a></div>
+    </section>
+
+    <!-- FINISHER -->
+    <section class="card">
+      <h2>Finisher (Toppers &amp; Quick Condiments)</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th><th>Number of ingredients</th><th>Batch size</th><th>Prep method</th><th>Recipe link(s)</th><th>Storage</th><th>Longevity</th><th>Use cases</th><th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Dukkah</strong> (seed &amp; nut mix)</td>
+              <td>6</td>
+              <td>~300 g</td>
+              <td>Thermomix</td>
+              <td><a href="https://cookidoo.com.au/recipes/recipe/en-AU/r81664">Dukkah – Cookidoo</a> 4.8 ★ (31)</td>
+              <td>PN (jar)</td>
+              <td>PN: 3 months (dry, sealed)</td>
+              <td>Sprinkle on salads, eggs, hummus; bread dip</td>
+              <td>VG, GF; contains nuts &amp; sesame; toast for crunch.</td>
+            </tr>
+            <tr>
+              <td><strong>Pickled Red Onions</strong></td>
+              <td>5</td>
+              <td>~400 g (1 jar)</td>
+              <td>Thermomix</td>
+              <td><a href="https://cookidoo.com.au/recipes/recipe/en-AU/r824317">Pickled Red Onions – Cookidoo</a> 4.6 ★ (14)</td>
+              <td>FR (jar)</td>
+              <td>FR: 2–3 weeks (in vinegar)</td>
+              <td>Tacos, burgers, salads, bowls</td>
+              <td>VG, GF; quick pickle; bright acidity.</td>
+            </tr>
+            <tr>
+              <td><strong>Sauerkraut</strong> (fermented)</td>
+              <td>2</td>
+              <td>~1 L (large jar)</td>
+              <td>Buy ready / Ferment</td>
+              <td><a href="https://cookidoo.thermomix.com/recipes/recipe/en-US/r149971">Sauerkraut – Cookidoo</a> 4.6 ★ (27)</td>
+              <td>FR (jar)</td>
+              <td>FR: 2–3 months (keep submerged)</td>
+              <td>Bowls, alongside rich dishes (probiotic tang)</td>
+              <td>VG, GF; supports microbiome diversity.</td>
+            </tr>
+            <tr>
+              <td><strong>Crispy Shallots</strong></td>
+              <td>1</td>
+              <td>~250 g (tub)</td>
+              <td>Buy ready</td>
+              <td>Fried shallot flakes, store‑bought</td>
+              <td>PN (airtight)</td>
+              <td>PN: ~6 months (cool, dry)</td>
+              <td>Final garnish on stir‑fries, curries, salads, soups</td>
+              <td>VG; use sparingly (salty).</td>
+            </tr>
+            <tr>
+              <td><strong>Yogurt Raita</strong> (mint &amp; cucumber)</td>
+              <td>4</td>
+              <td>~600 g (bowl)</td>
+              <td>Mix (no‑cook)</td>
+              <td><a href="https://cookidoo.co.uk/recipes/recipe/en-GB/r77384">Cucumber &amp; Mint Raita – Cookidoo</a> 4.7 ★ (35)</td>
+              <td>FR (sealed)</td>
+              <td>FR: 3 days</td>
+              <td>Dollop on curries, grilled meats, wraps</td>
+              <td>V, GF; Greek yogurt = extra protein; add cumin.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="alt"><strong>Alternatives:</strong> <a href="https://cookidoo.international/recipes/recipe/en/r123584">Chimichurri</a>, <a href="https://cookidoo.thermomix.com/recipes/recipe/en-US/r718209">Celery Leaf Gremolata</a>, <a href="https://cookidoo.com.au/recipes/recipe/en-AU/r44414">Roasted Spiced Chickpeas</a>, <a href="https://cookidoo.thermomix.com/recipes/recipe/en-US/r573292">Pickled Jalapeños</a></div>
+    </section>
+
+    <footer>
+      <p><span class="kbd">Tip</span> Freeze sauces in <strong>15–30 ml</strong> ice‑cube trays; label and bag for modular use. Stack the <strong>Varoma</strong> to steam proteins above bases/veg for efficient batch days. For ZOE‑style plant diversity, rotate different seeds, herbs, and beans across the week.</p>
+    </footer>
+  </div>
+</body>
+</html>
